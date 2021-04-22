@@ -1,0 +1,16 @@
+.MentorsList {
+  padding: 1rem;
+  text-align: center;
+}
+.intro {
+  color: var(--pink);
+  font-size: 3rem;
+  padding: 6rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .mentors {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

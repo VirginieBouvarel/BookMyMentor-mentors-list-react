@@ -1,1 +1,84 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+@import-normalize;
 
+/* Réinitialisations */
+
+html {
+  font-size: 62.5%; /*1rem = 10px*/
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+/*
+Classe de masquage d'accessibilité 
+Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilité/SEO ou recommandé par le W3C mais non souhaité sur le design final. L'élément concerné ne sera pas visible par l'utilisateur mais sera pris en compte par les liseuses et les robots de référencement.
+*/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* CSS applicable à toute l'application */
+
+:root {
+  /* colors */
+  --black: hsl(236, 22%, 15%);
+  --dark-blue: hsl(232, 23%, 20%);
+  --pink: hsl(329, 79%, 50%);
+  --light-grey: hsl(0, 0%, 77%);
+  --white: hsl(0, 0%, 100%);
+
+  /* fonts */
+  --roboto: "Roboto", sans-serif;
+
+  /* Texts */
+  --color-text-base: var(--light-grey);
+  --color-text-accent: var(--pink);
+  --color-text-title: var(--white);
+
+  --font-body: var(--roboto);
+  --font-title: var(--roboto);
+  --font-size-body: 1.6rem;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--black);
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  color: var(--color-text-base);
+}
