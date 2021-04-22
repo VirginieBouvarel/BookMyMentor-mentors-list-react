@@ -1,17 +1,16 @@
 import './Mentor.css';
-import avatarTrottier from '../assets/avatar-augustin-trottier.png';
 import horloge from '../assets/horloge.png';
 
-function Mentor() {
+function Mentor({ id, imageSource, name, job, text, time }) {
     return (
-        <li className="Mentor">
-            <img className="Mentor__image" width="342px" height="227px" src={avatarTrottier} alt="Augustin Trottier mentor" />
-            <h2 className="Mentor__name">Augustin Trottier</h2>
-            <p className="Mentor__job">Développeur web sénior</p>
-            <p className="Mentor__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, asperiores.</p>
+        <li key={id} className="Mentor">
+            <img className="Mentor__image" width="342px" height="227px" src={imageSource} alt={`${name} mentor`} />
+            <h2 className="Mentor__name">{name}</h2>
+            <p className="Mentor__job">{job}</p>
+            <p className="Mentor__text">{text}</p>
             <div className="Mentor__time">
                 <img src={horloge} alt="" />
-                <p>Long terme</p>
+                <p>{time}</p>
             </div>
         </li>
     );
