@@ -6,7 +6,7 @@ function Header() {
     return (
         <div className="Header">
             <a href="index.html">
-                <img src={logo} alt="Accueil Book My Mentor" />
+                <img src={logo} width="341px" height="41px" alt="Accueil Book My Mentor" />
                 <h1 className="sr-only">Book My Mentor</h1>
             </a>
             <Navbar />

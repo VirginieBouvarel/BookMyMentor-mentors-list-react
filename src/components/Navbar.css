@@ -2,7 +2,7 @@
   display: none;
 }
 
-.menu__item a {
+.menu__item > a {
   color: var(--black);
   margin-right: 0.5rem;
   font-size: 1.2rem;
@@ -23,7 +23,7 @@
     display: flex;
   }
 
-  .menu__item + .menu__item a {
+  .menu__item + .menu__item > a {
     border-left: 1px solid var(--black);
     padding-left: 0.5rem;
   }
